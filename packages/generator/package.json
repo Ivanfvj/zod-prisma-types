@@ -1,8 +1,8 @@
 {
-  "name": "zod-prisma-types",
-  "version": "3.2.4",
-  "description": "Generates zod schemas from Prisma models with advanced validation",
-  "author": "Chris Hörmann",
+  "name": "@ivanfvj/zod-prisma-types",
+  "version": "4.0.0",
+  "description": "Generates zod schemas from Prisma models with advanced validation - Zod v4 compatible fork",
+  "author": "Chris Hörmann (original), Ivan Velastegui (zod v4 fork)",
   "license": "MIT",
   "main": "dist/generator.js",
   "types": "dist/generator.d.ts",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrishoermann/zod-prisma-types.git"
+    "url": "https://github.com/ivanfvj/zod-prisma-types.git"
   },
   "bin": {
     "zod-prisma-types": "dist/bin.js"
@@ -50,7 +50,7 @@
     "@prisma/generator-helper": "^6.6.0",
     "code-block-writer": "^13.0.3",
     "lodash": "^4.17.21",
-    "zod": "3.24.2"
+    "zod": "^4.0.14"
   },
   "peerDependencies": {
     "@prisma/client": "^4.x.x || ^5.x.x || ^6.x.x",

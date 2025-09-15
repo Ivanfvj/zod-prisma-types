@@ -42,7 +42,7 @@ export const writeInputJsonValue = ({
               `z.object({ toJSON: z.function(z.tuple([]), z.any()) }),`,
             )
             .writeLine(
-              `z.record(z.lazy(() => z.union([InputJsonValueSchema, z.literal(null)]))),`,
+              `z.record(z.string(), z.lazy(() => InputJsonValueSchema.nullable())),`,
             )
             .writeLine(
               `z.array(z.lazy(() => z.union([InputJsonValueSchema, z.literal(null)]))),`,

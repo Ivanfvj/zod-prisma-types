@@ -20,12 +20,12 @@ export const getPrismaVersion = () => {
     );
     const jsonData = z
       .object({
-        dependencies: z.record(z.string()),
+        dependencies: z.record(z.string(), z.string()),
       })
       .parse(JSON.parse(rawData));
 
     // Extract @prisma/client version
-    let prismaVersion = jsonData['dependencies']['@prisma/client'];
+    let prismaVersion = jsonData.dependencies['@prisma/client'];
 
     // Remove semver characters
     prismaVersion = prismaVersion.replace(/^[\^=~<>*]/, '');
