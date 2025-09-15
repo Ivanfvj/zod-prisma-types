@@ -32,7 +32,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md,json}\""
   },
   "devDependencies": {
-    "@prisma/internals": "^6.6.0",
+    "@prisma/internals": "^6.13.0",
     "@types/lodash": "^4.17.16",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
@@ -46,8 +46,8 @@
     "vitest": "^3.1.1"
   },
   "dependencies": {
-    "@prisma/dmmf": "^6.6.0",
-    "@prisma/generator-helper": "^6.6.0",
+    "@prisma/dmmf": "^6.13.0",
+    "@prisma/generator-helper": "^6.13.0",
     "code-block-writer": "^13.0.3",
     "lodash": "^4.17.21",
     "zod": "^4.0.14"
